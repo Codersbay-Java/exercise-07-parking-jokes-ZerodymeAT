@@ -7,4 +7,5 @@ public class ParkingMeter {
         this.minutesPurchased = minutesPurchased;
     }
 
+
 }

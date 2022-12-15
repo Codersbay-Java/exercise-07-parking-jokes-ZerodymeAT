@@ -7,12 +7,15 @@ public class Application {
         PoliceOfficer officer = new PoliceOfficer("Max Mustermann", "4788");
         int feesum = officer.patrol(car, meter);
 
+
         // Did the officer issue a ticket?
         if (feesum != 0) {
             System.out.println("You are a criminal! U have to pay a fee of:" + feesum + " $");
+            officer.identifier(car);
         }
         else {
             System.out.println("No crimes committed!");
+            officer.parktime(car, meter);
         }
 
     }

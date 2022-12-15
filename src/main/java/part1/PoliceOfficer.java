@@ -26,6 +26,14 @@ public class PoliceOfficer {
             feeSum = feeStart + (feeExtenderByTenMin * bonusMoney);
         } return feeSum;
     }
+    public void parktime(ParkedCar car, ParkingMeter meter){
+        int freetime = meter.minutesPurchased - car.minutesParked;
+        System.out.println("You have " + freetime + " minutes open");;
+    }
+
+    public void identifier(ParkedCar car){
+        System.out.println("Ticket by Officer: " + badgeNumber + " to Car LicNr: " + car.licenseNumber);
+    }
 
 
 }
